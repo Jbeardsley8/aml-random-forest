@@ -1,4 +1,4 @@
-# 💵 AML Random Forest Classifier
+# 💵 AML Random Forest Classifier (In-progress)
 
 This project applies a Random Forest classifier to detect potential money laundering activity using transactional data. It includes full feature engineering, pipeline building, hyperparameter tuning, and model evaluation.
 
