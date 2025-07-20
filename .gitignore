@@ -1,0 +1,14 @@
+# Ignore data files
+HI-Small_Trans.csv
+
+# Ignore pipeline cache files
+pipeline_cache/
+
+# Ignore Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# Ignore temporary or system files
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
