@@ -12,7 +12,7 @@ The dataset simulates realistic financial transactions with labeled money launde
 
 ## Class Imbalance
 
-Money laundering is rare in the real world, and the dataset reflects this imbalance — fraudulent transactions make up only a small percentage of the total.
+Money laundering is rare in the real world, and the dataset reflects this imbalance — fraudulent transactions make up only a small percentage (less than 1%) of the total.
 
 To address this:
 - The model uses `class_weight='balanced'` in the Random Forest to give more importance to minority class (laundering).
@@ -37,7 +37,7 @@ To address this:
 
 Large files are intentionally excluded from version control via `.gitignore`.
 
-## 🛠 Tools & Libraries
+## Tools & Libraries
 
 - Python
 - Scikit-learn
@@ -55,6 +55,7 @@ After scoring transactions with the optimized model and threshold:
 - Transactions predicted as laundering (label = 1) are flagged for review.
 - These flagged transactions are ranked by predicted probability.
 - The top-ranked transactions are exported to `flagged_transactions.csv`.
+- While sampling techniques had minimal impact on model performance—potentially due to the model’s internal handling of imbalance, the nature of the dataset, or possible limitations in my undrestanding or implementation.
 
 This allows investigators or compliance teams to manually review the most suspicious activities first, improving investigation efficiency.
 
