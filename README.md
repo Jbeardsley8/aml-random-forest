@@ -4,7 +4,7 @@ This project applies a Random Forest classifier to detect potential money launde
 
 ## Dataset
 
-This project uses the **Anti-Money Laundering Simulated Dataset** 
+This project uses the **IBM Transactions for Anti-Money Laundering** 
 
 The dataset simulates realistic financial transactions with labeled money laundering activity. It includes attributes such as account IDs, transaction amounts, currency types, and timestamps.
 
