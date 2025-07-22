@@ -60,6 +60,3 @@ After scoring transactions with the optimized model and threshold:
 This allows investigators or compliance teams to manually review the most suspicious activities first, improving investigation efficiency.
 
 You can adjust the threshold based on operational resources or regulatory risk tolerance.
-
-
-*Developed by [@Jbeardsley8](https://github.com/Jbeardsley8)*
