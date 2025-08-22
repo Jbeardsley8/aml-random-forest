@@ -4,7 +4,7 @@ This project applies a Random Forest classifier to detect potential money launde
 
 ## Dataset
 
-This project uses the **IBM Transactions for Anti-Money Laundering** 
+This project uses the **IBM Transactions for Anti-Money Laundering Dataset** 
 
 The dataset simulates realistic financial transactions with labeled money laundering activity. It includes attributes such as account IDs, transaction amounts, currency types, and timestamps.
 
@@ -12,7 +12,7 @@ The dataset simulates realistic financial transactions with labeled money launde
 
 ## Class Imbalance
 
-Money laundering is rare in the real world, and the dataset reflects this imbalance — fraudulent transactions make up only a small percentage (less than 1%) of the total.
+Money laundering is rare in the real world, and the dataset reflects this imbalance, fraudulent transactions make up only a small percentage (less than 1%) of the total.
 
 To address this:
 - The model uses `class_weight='balanced'` in the Random Forest to give more importance to minority class (laundering).
@@ -33,10 +33,6 @@ To address this:
 - Feature importance visualization
 - Model evaluation using classification reports and confusion matrix
 
-## Note
-
-Large files are intentionally excluded from version control via `.gitignore`.
-
 ## Tools & Libraries
 
 - Python
@@ -56,7 +52,3 @@ After scoring transactions with the optimized model and threshold:
 - These flagged transactions are ranked by predicted probability.
 - The top-ranked transactions are exported to `flagged_transactions.csv`.
 - While sampling techniques had minimal impact on model performance—potentially due to the model’s internal handling of imbalance, the nature of the dataset, or possible limitations in my undrestanding or implementation.
-
-This allows investigators or compliance teams to manually review the most suspicious activities first, improving investigation efficiency.
-
-You can adjust the threshold based on operational resources or regulatory risk tolerance.
